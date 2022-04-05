@@ -1,0 +1,19 @@
+type Query {
+    Events: [Event]
+    Event(eventId: Int): Event!
+}
+
+type Event {
+    eventId: Float
+    eventGroupId: Float
+    organizerId: Float
+    organizerName: String!
+    status: String!
+    nonPrimaryEventGroupIds: [Float]
+    seriesId: Float!
+    name: String
+    type: String!
+    startDate: String
+    doorsOpen: String!
+}
+
