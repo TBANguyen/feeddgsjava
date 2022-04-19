@@ -1,16 +1,17 @@
 type Query {
-    Events: [Event]
-    Event(eventId: Int): Event!
+#    Events: [Event]
+#    Event(eventId: Int): Event!
+    events: [Event]
 }
 
 type Event {
-    eventId: Float
-    eventGroupId: Float
-    organizerId: Float
+    eventId: ID
+    eventGroupId: Int
+    organizerId: Int
     organizerName: String!
     status: String!
-    nonPrimaryEventGroupIds: [Float]
-    seriesId: Float!
+    nonPrimaryEventGroupIds: [Int]
+    seriesId: Int!
     name: String
     type: String!
     startDate: String

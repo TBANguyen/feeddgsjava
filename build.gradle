@@ -25,3 +25,8 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+generateJava {
+	packageName = 'com.stager.graphql.generated'
+	schemaPaths = ["${projectDir}/src/main/resources/schema"]
+}

@@ -5,21 +5,22 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.ZonedDateTime;
+import java.util.UUID;
 
 @Entity
 @Table(name = "feed_event")
 public class Event {
 
     @Id
-    private long event_id;
+    private UUID event_id;
     private ZonedDateTime modifiedAt;
     private ZonedDateTime doorsOpen;
 
-    public long getEvent_id() {
+    public UUID getEvent_id() {
         return event_id;
     }
 
-    public void setEvent_id(long event_id) {
+    public void setEvent_id(UUID event_id) {
         this.event_id = event_id;
     }
 
@@ -157,6 +158,6 @@ public class Event {
     private long venueId;
     private Long seriesId;
 
+}
 //    private List<Event>Events;
 
-}
