@@ -13,15 +13,15 @@ import java.util.UUID;
 @Service
 public class EventQueryService {
 
+    @Autowired
     private EventRepository repository;
 
     public List<Event> eventLatestList(){
         var Events = repository.findAllById();
-
         return Events;
     }
 
-    public Optional<Event> eventDetail (UUID event_id){
-        return repository.findById(event_id);
-    }
+//    public Optional<Event> eventDetail (UUID event_id){
+//        return repository.findById(event_id);
+
 }

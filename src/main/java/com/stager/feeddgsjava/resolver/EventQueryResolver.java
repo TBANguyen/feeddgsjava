@@ -32,14 +32,28 @@ public class EventQueryResolver {
                 .collect(Collectors.toList());
     }
 
-    @DgsData(parentType = DgsConstants.QUERY_TYPE, field = DgsConstants.QUERY.Events)
-    public Event getEventDetail(@InputArgument(value = "event_id") UUID id) {
-        var eventid = id;
-        var event = queryService.eventDetail(id)
-                .orElseThrow(DgsEntityNotFoundException::new);
 
-        return GraphqlBeanMapper.mapToGraphql((event));
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    @DgsData(parentType = DgsConstants.QUERY_TYPE, field = DgsConstants.QUERY.Events)
+//    public Event getEventDetail(@InputArgument(value = "event_id") UUID id) {
+//        var eventid = id;
+//        var event = queryService.eventDetail(eventid)
+//                .orElseThrow(DgsEntityNotFoundException::new);
+//
+//        return GraphqlBeanMapper.mapToGraphql((event));
+//    }
 
 
 

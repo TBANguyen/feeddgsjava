@@ -20,6 +20,10 @@ dependencies {
 	implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation('com.github.javafaker:javafaker:1.0.2')
+	runtimeOnly('mysql:mysql-connector-java')
+
 }
 
 tasks.named('test') {

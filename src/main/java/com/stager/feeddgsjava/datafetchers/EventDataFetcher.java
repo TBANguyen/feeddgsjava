@@ -6,7 +6,7 @@ import com.netflix.graphql.dgs.DgsData;
 import com.netflix.graphql.dgs.DgsQuery;
 import com.netflix.graphql.dgs.InputArgument;
 import com.stager.feeddgsjava.model.Event;
-import com.stager.feeddgsjava.services.EventService;
+//import com.stager.feeddgsjava.services.EventService;
 import java.util.List;
 
 

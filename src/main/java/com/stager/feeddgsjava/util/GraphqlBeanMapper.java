@@ -7,8 +7,9 @@ public class GraphqlBeanMapper {
     public static Event mapToGraphql(Event original) {
         var result = new Event();
 
-        result.setEvent_id(original.getEvent_id());
+        result.setId(original.getId());
         result.setName(original.getName());
+        result.setCreatedAt(original.getCreatedAt());
         result.setDoorsOpen(original.getDoorsOpen());
         result.setModifiedAt(original.getModifiedAt());
         result.setEnd(original.getEnd());

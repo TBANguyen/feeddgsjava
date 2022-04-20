@@ -1,11 +1,11 @@
 type Query {
 #    Events: [Event]
 #    Event(eventId: Int): Event!
-    events: [Event]
+    events: [Event!]
 }
 
 type Event {
-    eventId: ID
+    id: Int
     eventGroupId: Int
     organizerId: Int
     organizerName: String!
@@ -16,5 +16,11 @@ type Event {
     type: String!
     startDate: String
     doorsOpen: String!
+}
+
+type Venue{
+    id: Int
+    organizerId: Int
+    json: String
 }
 

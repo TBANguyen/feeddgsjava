@@ -1,29 +1,46 @@
 package com.stager.feeddgsjava.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
-@Entity
-@Table(name = "feed_event")
+@Entity(name = "feed_event")
+//@Table(name = "feed_event")
 public class Event {
 
     @Id
-    private UUID event_id;
+    @Column(name= "id")
+    private Integer id;
+
+    private ZonedDateTime createdAt;
     private ZonedDateTime modifiedAt;
     private ZonedDateTime doorsOpen;
+    private ZonedDateTime end;
+    private String name;
+    private ZonedDateTime programStart;
+    private ZonedDateTime start;
+    private EventStatus status;
+    private int uniqueId;
+    private long organizationId;
+    private long eventTypeId;
+    private long primaryEventGroupId;
+    private String projectTypeCode;
+    private String projectTypeName;
+    private long venueId;
+    private Long seriesId;
 
-    public UUID getEvent_id() {
-        return event_id;
+    public Integer getId() {return id;}
+
+    public void setId(Integer id) {this.id = id;}
+
+    public ZonedDateTime getCreatedAt() {return createdAt;}
+
+    public void setCreatedAt(ZonedDateTime createdAt) {this.createdAt = createdAt;
     }
-
-    public void setEvent_id(UUID event_id) {
-        this.event_id = event_id;
-    }
-
     public ZonedDateTime getModifiedAt() {
         return modifiedAt;
     }
@@ -144,19 +161,7 @@ public class Event {
         this.seriesId = seriesId;
     }
 
-    private ZonedDateTime end;
-    private String name;
-    private ZonedDateTime programStart;
-    private ZonedDateTime start;
-    private EventStatus status;
-    private String projectTypeCode;
-    private String projectTypeName;
-    private int uniqueId;
-    private long organizationId;
-    private long eventTypeId;
-    private long primaryEventGroupId;
-    private long venueId;
-    private Long seriesId;
+
 
 }
 //    private List<Event>Events;
