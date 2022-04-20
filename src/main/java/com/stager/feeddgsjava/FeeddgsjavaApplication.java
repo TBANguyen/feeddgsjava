@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 //@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication
-//@EnableJpaRepositories(basePackages = "repository")
-//@ComponentScan("com.stager.feeddgsjava.repository")
+//@EnableJpaRepositories(basePackages = "com.stager.feeddgsjava.repository")
+//@ComponentScan("com.stager.feeddgsjava")
 public class FeeddgsjavaApplication {
 
 	public static void main(String[] args) {

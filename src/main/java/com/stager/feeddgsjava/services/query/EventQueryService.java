@@ -17,7 +17,7 @@ public class EventQueryService {
     private EventRepository repository;
 
     public List<Event> eventLatestList(){
-        var Events = repository.findAllById();
+        var Events = repository.findAll();
         return Events;
     }
 

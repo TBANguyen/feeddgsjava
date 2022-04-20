@@ -1,3 +1,6 @@
+#scalar Date
+#scalar DateTime
+
 type Query {
 #    Events: [Event]
 #    Event(eventId: Int): Event!
@@ -6,16 +9,25 @@ type Query {
 
 type Event {
     id: Int
-    eventGroupId: Int
-    organizerId: Int
-    organizerName: String!
-    status: String!
-    nonPrimaryEventGroupIds: [Int]
-    seriesId: Int!
-    name: String
-    type: String!
-    startDate: String
-    doorsOpen: String!
+    primaryEventGroup_id: Int
+    organizer_id: Int
+    venue_id: Int
+    series_id: Int
+#    date: DateTime
+#    modified_since: DateTime
+#    status: String
+#    publicationChannelToken: String
+
+#    eventGroupId: Int
+#    organizerId: Int
+#    organizerName: String!
+#    status: String!
+#    nonPrimaryEventGroupIds: [Int]
+#    seriesId: Int!
+#    name: String
+#    type: String!
+#    startDate: String
+#    doorsOpen: String!
 }
 
 type Venue{

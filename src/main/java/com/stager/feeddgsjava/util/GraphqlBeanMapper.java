@@ -8,22 +8,25 @@ public class GraphqlBeanMapper {
         var result = new Event();
 
         result.setId(original.getId());
-        result.setName(original.getName());
-        result.setCreatedAt(original.getCreatedAt());
-        result.setDoorsOpen(original.getDoorsOpen());
-        result.setModifiedAt(original.getModifiedAt());
-        result.setEnd(original.getEnd());
-        result.setProgramStart(original.getProgramStart());
-        result.setStart(original.getStart());
-        result.setStatus(original.getStatus());
-        result.setProjectTypeCode(original.getProjectTypeCode());
-        result.setProjectTypeName(original.getProjectTypeName());
-        result.setUniqueId(original.getUniqueId());
-        result.setOrganizationId(original.getOrganizationId());
-        result.setEventTypeId(original.getEventTypeId());
-        result.setPrimaryEventGroupId(original.getPrimaryEventGroupId());
-        result.setVenueId(original.getVenueId());
-        result.setSeriesId(original.getSeriesId());
+//        result.setPrimaryEventGroupId(original.getPrimaryEventGroupId());
+//        result.setOrganizationId(original.getOrganizationId());
+//        result.setVenueId(original.getVenueId());
+//        result.setSeriesId(original.getSeriesId());
+//        result.setName(original.getName());
+//        result.setCreatedAt(original.getCreatedAt());
+//        result.setDoorsOpen(original.getDoorsOpen());
+//        result.setModifiedAt(original.getModifiedAt());
+//        result.setEnd(original.getEnd());
+//        result.setProgramStart(original.getProgramStart());
+//        result.setStart(original.getStart());
+//        result.setStatus(original.getStatus());
+//        result.setProjectTypeCode(original.getProjectTypeCode());
+//        result.setProjectTypeName(original.getProjectTypeName());
+//        result.setUniqueId(original.getUniqueId());
+//        result.setOrganizationId(original.getOrganizationId());
+//        result.setEventTypeId(original.getEventTypeId());
+
+
 
         return result;
     }

@@ -14,8 +14,8 @@ import java.util.UUID;
 @Repository
 public interface EventRepository extends CrudRepository<Event, Integer> {
 
-    @Query("SELECT DISTINCT e.id FROM feed_event e")
-    List<Event> findAllById();
+    @Query("SELECT DISTINCT e FROM feed_event e")
+    List<Event> findAll();
 
 //    @Query(nativeQuery = true, value = "select * from event e "
 //            + "where upper(content) like upper(:keyword) "
