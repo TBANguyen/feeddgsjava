@@ -21,6 +21,8 @@ public class EventQueryService {
         return Events;
     }
 
+    public Optional<Event> eventonlybyid(Integer event_id) {return repository.findById(event_id);}
+
 //    public Optional<Event> eventDetail (UUID event_id){
 //        return repository.findById(event_id);
 

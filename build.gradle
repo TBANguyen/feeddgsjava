@@ -20,11 +20,16 @@ dependencies {
 	implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
+	implementation ('com.graphql-java:graphql-java-extended-scalars:17.0')
 	implementation('com.github.javafaker:javafaker:1.0.2')
+
+	//Driver connector
 	runtimeOnly('mysql:mysql-connector-java')
 
+	//date and DateTime is not a standard scalar in GraphQL, so instead of implementing it on our own, we use DGS to do it for us.
+	implementation("com.netflix.graphql.dgs:graphql-dgs-extended-scalars")
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()
@@ -33,4 +38,7 @@ tasks.named('test') {
 generateJava {
 	packageName = 'com.stager.graphql.generated'
 	schemaPaths = ["${projectDir}/src/main/resources/schema"]
+//	typeMapping =[
+//	        "Date" : "java.util.Date"
+//	]
 }

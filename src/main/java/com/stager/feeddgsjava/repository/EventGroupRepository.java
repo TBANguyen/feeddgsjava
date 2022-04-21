@@ -2,20 +2,17 @@ package com.stager.feeddgsjava.repository;
 
 
 import com.stager.feeddgsjava.model.Event;
+import com.stager.feeddgsjava.model.EventGroup;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
 @Repository
-public interface EventRepository extends CrudRepository<Event, Integer> {
+public interface EventGroupRepository extends CrudRepository<EventGroup, Integer> {
 
-//    @Query("FROM feed_event SELECT id, primaryEventGroup_id")
-    @Query("SELECT e FROM feed_event e")
-    List<Event> findAll();
-
+    @Query("SELECT e FROM feed_eventGroup e")
+    List<EventGroup> findAll();
 
 }
