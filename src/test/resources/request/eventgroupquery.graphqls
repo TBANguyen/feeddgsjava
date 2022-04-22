@@ -1,0 +1,9 @@
+query{
+    eventgroups{
+        id
+        organizer_id
+        modified_since
+        extended
+        limited
+    }
+}

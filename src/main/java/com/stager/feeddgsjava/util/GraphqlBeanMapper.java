@@ -20,6 +20,15 @@ public class GraphqlBeanMapper {
         result.setStatus(original.getStatus());
         result.setExtended(original.getExtended());
         result.setLimited(original.getLimited());
+
+
+
+
+
+
+
+
+
 //        result.setName(original.getName());
 //        result.setCreatedAt(original.getCreatedAt());
 //        result.setDoorsOpen(original.getDoorsOpen());

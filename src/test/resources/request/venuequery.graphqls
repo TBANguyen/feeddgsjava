@@ -1,0 +1,7 @@
+query {
+    venues{
+        id
+        organizer_id
+        json
+    }
+}

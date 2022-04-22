@@ -1,0 +1,11 @@
+{
+  "data": {
+    "venues": [
+      {
+        "id": 1,
+        "organizer_id": 1,
+        "json": "{\"id\":1,\"organizerId\":1,\"name\":\"Stager HQ\",\"city\":\"Rotterdam\",\"street\":\"Zomerhofstraat 82\",\"zipcode\":\"3032 CM\",\"country\":\"NETHERLANDS\",\"phoneNumber\":\"+31108208722\",\"url\":\"https://stager.co/nl-rt/\",\"spaces\":[{\"id\":1,\"name\":\"Epicenter\"},{\"id\":2,\"name\":\"Lunch room\"},{\"id\":3,\"name\":\"Conference room\"}]}"
+      }
+    ]
+  }
+}

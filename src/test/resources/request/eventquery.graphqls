@@ -1,0 +1,14 @@
+query {
+    events {
+        id
+        primaryEventGroup_id
+        organizer_id
+        venue_id
+        series_id
+        date
+        modified_since
+        status
+        extended
+        limited
+    }
+}

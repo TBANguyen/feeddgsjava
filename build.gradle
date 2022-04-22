@@ -28,6 +28,10 @@ dependencies {
 
 	//date and DateTime is not a standard scalar in GraphQL, so instead of implementing it on our own, we use DGS to do it for us.
 	implementation("com.netflix.graphql.dgs:graphql-dgs-extended-scalars")
+
+	testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:11.1.0'
+
+	implementation 'io.micrometer:micrometer-core:1.8.5'
 }
 
 

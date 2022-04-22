@@ -1,0 +1,10 @@
+{
+  "data": {
+    "organizers": [
+      {
+        "id": 1,
+        "json": "{\"id\":1,\"name\":\"Das Podium 🚁\",\"primaryLanguage\":\"nl\",\"secondaryLanguage\":\"en\"}"
+      }
+    ]
+  }
+}

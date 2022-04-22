@@ -1,0 +1,6 @@
+query {
+    organizers{
+        id
+        json
+    }
+}

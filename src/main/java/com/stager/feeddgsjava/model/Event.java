@@ -30,9 +30,7 @@ public class Event {
     private Integer series_id;
 
     @Column(name = "date")
-    private Date date;
-
-
+    private ZonedDateTime date;
 
     @Column(name = "modified_since")
     private ZonedDateTime modified_since;
@@ -40,29 +38,12 @@ public class Event {
     @Column(name = "status")
     private String status;
 
-
-
     @Column(name = "extended")
     private String extended;
 
 
     @Column(name = "limited")
     private String limited;
-
-
-//    private ZonedDateTime createdAt;
-//    private ZonedDateTime modifiedAt;
-//    private ZonedDateTime doorsOpen;
-//    private ZonedDateTime end;
-//    private String name;
-//    private ZonedDateTime programStart;
-//    private ZonedDateTime start;
-//    private int uniqueId;
-//
-//    private long eventTypeId;
-//
-//    private String projectTypeCode;
-//    private String projectTypeName;
 
 
     public Integer getId() {return id;}
@@ -101,11 +82,11 @@ public class Event {
         this.series_id = series_id;
     }
 
-    public Date getDate() {
+    public ZonedDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {this.date = date;}
+    public void setDate(ZonedDateTime date) {this.date = date;}
 
     public ZonedDateTime getModified_since() {return modified_since;}
 
@@ -124,6 +105,46 @@ public class Event {
     public void setLimited(String limited) {this.limited = limited;}
 
 
+
+
+
+
+//    public Event(Integer id, Integer primaryEventGroup_id, Integer organizer_id, Integer venue_id, Integer series_id, Date date, ZonedDateTime modified_since, String status, String extended, String limited) {
+//        this.id = id;
+//        this.primaryEventGroup_id = primaryEventGroup_id;
+//        this.organizer_id = organizer_id;
+//        this.venue_id = venue_id;
+//        this.series_id = series_id;
+//        this.date = date;
+//        this.modified_since = modified_since;
+////        this.status = status;
+//        this.extended = extended;
+//        this.limited = limited;
+//    }
+//
+//    public Integer geteventid(){
+//        return id;
+//    }
+
+
+
+
+
+
+
+//    private ZonedDateTime createdAt;
+//    private ZonedDateTime modifiedAt;
+//    private ZonedDateTime doorsOpen;
+//    private ZonedDateTime end;
+//    private String name;
+//    private ZonedDateTime programStart;
+//    private ZonedDateTime start;
+//    private int uniqueId;
+//
+//    private long eventTypeId;
+//
+//    private String projectTypeCode;
+//    private String projectTypeName;
 
 
 //    public ZonedDateTime getCreatedAt() {return createdAt;}

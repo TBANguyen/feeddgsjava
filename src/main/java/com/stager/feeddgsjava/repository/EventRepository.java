@@ -17,5 +17,8 @@ public interface EventRepository extends CrudRepository<Event, Integer> {
     @Query("SELECT e FROM feed_event e")
     List<Event> findAll();
 
+    @Query("SELECT e FROM feed_event e WHERE id like (:event_id)")
+    List<Event> findbyid(@Param("event_id") Integer event_id);
+
 
 }
