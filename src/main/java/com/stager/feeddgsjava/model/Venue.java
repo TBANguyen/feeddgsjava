@@ -1,15 +1,17 @@
 package com.stager.feeddgsjava.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * JPA annotated class representing a record in the Venue table.
+ */
 @Entity(name = "feed_venue")
 public class Venue {
 
     @Id
-    @Column(name= "id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "organizer_id")
@@ -41,7 +43,6 @@ public class Venue {
     public void setJson(String json) {
         this.json = json;
     }
-
 
 
 }

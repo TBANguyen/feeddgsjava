@@ -1,17 +1,18 @@
 package com.stager.feeddgsjava.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.time.ZonedDateTime;
-import java.util.Date;
 
+/**
+ * JPA annotated class representing a record in the EventGroup table.
+ */
 @Entity(name = "feed_eventGroup")
 public class EventGroup {
 
     @Id
-    @Column(name= "id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "organizer_id")

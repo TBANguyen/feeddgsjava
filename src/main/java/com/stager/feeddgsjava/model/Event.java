@@ -1,20 +1,18 @@
 package com.stager.feeddgsjava.model;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 import java.time.ZonedDateTime;
-import java.util.Date;
-import java.util.UUID;
 
+/**
+ * JPA annotated class representing a record in the Event table.
+ */
 @Entity(name = "feed_event")
-//@Table(name = "feed_event")
 public class Event {
 
     @Id
-    @Column(name= "id")
+    @Column(name = "id")
     private Integer id;
 
     @Column(name = "primaryEventGroup_id")
@@ -46,9 +44,13 @@ public class Event {
     private String limited;
 
 
-    public Integer getId() {return id;}
+    public Integer getId() {
+        return id;
+    }
 
-    public void setId(Integer id) {this.id = id;}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getPrimaryEventGroup_Id() {
         return primaryEventGroup_id;
@@ -73,7 +75,8 @@ public class Event {
     public void setVenueId(Integer venue_id) {
         this.venue_id = venue_id;
     }
-//
+
+    //
     public Integer getSeriesId() {
         return series_id;
     }
@@ -86,27 +89,41 @@ public class Event {
         return date;
     }
 
-    public void setDate(ZonedDateTime date) {this.date = date;}
+    public void setDate(ZonedDateTime date) {
+        this.date = date;
+    }
 
-    public ZonedDateTime getModified_since() {return modified_since;}
+    public ZonedDateTime getModified_since() {
+        return modified_since;
+    }
 
-    public void setModified_since(ZonedDateTime modified_since) {this.modified_since = modified_since;}
+    public void setModified_since(ZonedDateTime modified_since) {
+        this.modified_since = modified_since;
+    }
 
-    public String getStatus() {return status;}
+    public String getStatus() {
+        return status;
+    }
 
-    public void setStatus(String status) {this.status = status;}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-    public String getExtended() {return extended;}
+    public String getExtended() {
+        return extended;
+    }
 
-    public void setExtended(String extended) {this.extended = extended;}
+    public void setExtended(String extended) {
+        this.extended = extended;
+    }
 
-    public String getLimited() {return limited;}
+    public String getLimited() {
+        return limited;
+    }
 
-    public void setLimited(String limited) {this.limited = limited;}
-
-
-
-
+    public void setLimited(String limited) {
+        this.limited = limited;
+    }
 
 
 //    public Event(Integer id, Integer primaryEventGroup_id, Integer organizer_id, Integer venue_id, Integer series_id, Date date, ZonedDateTime modified_since, String status, String extended, String limited) {
@@ -125,11 +142,6 @@ public class Event {
 //    public Integer geteventid(){
 //        return id;
 //    }
-
-
-
-
-
 
 
 //    private ZonedDateTime createdAt;
@@ -232,11 +244,6 @@ public class Event {
 //    public void setEventTypeId(long eventTypeId) {
 //        this.eventTypeId = eventTypeId;
 //    }
-
-
-
-
-
 
 
 }

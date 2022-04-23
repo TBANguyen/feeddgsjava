@@ -5,6 +5,9 @@ import com.stager.feeddgsjava.model.EventGroup;
 import com.stager.feeddgsjava.model.Organizer;
 import com.stager.feeddgsjava.model.Venue;
 
+/**
+ *
+ */
 public class GraphqlBeanMapper {
 
     public static Event mapToGraphql(Event original) {

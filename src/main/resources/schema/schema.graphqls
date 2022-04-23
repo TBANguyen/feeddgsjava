@@ -2,14 +2,12 @@ scalar Date
 scalar DateTime
 
 type Query {
-#    Events: [Event]
-#    Event(eventId: Int): Event!
+
     events: [Event!]
     venues: [Venue!]
     organizers: [Organizer!]
     eventgroups: [EventGroup!]
 
-    eventbyid(id: Int): Event
 }
 
 type Event {
@@ -23,26 +21,8 @@ type Event {
     status: String
     extended: String
     limited: String
-#    publicationChannelToken: String
-
-#    eventGroupId: Int
-#    organizerId: Int
-#    organizerName: String!
-#    status: String!
-#    nonPrimaryEventGroupIds: [Int]
-#    seriesId: Int!
-#    name: String
-#    type: String!
-#    startDate: String
-#    doorsOpen: String!
 }
 
-enum EventStatus{
-    FINAL,
-    OPTION,
-    TOBECONFIRMED,
-    STATUS
-}
 
 type Venue{
     id: Int

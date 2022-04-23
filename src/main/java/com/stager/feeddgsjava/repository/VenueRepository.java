@@ -7,7 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
+/**
+ * Definition of db queries on the feed's Venue table.
+ */
 @Repository
 public interface VenueRepository extends CrudRepository<Venue, Integer> {
 
