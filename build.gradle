@@ -42,7 +42,5 @@ tasks.named('test') {
 generateJava {
 	packageName = 'com.stager.graphql.generated'
 	schemaPaths = ["${projectDir}/src/main/resources/schema"]
-//	typeMapping =[
-//	        "Date" : "java.util.Date"
-//	]
+	generateClient = true
 }
