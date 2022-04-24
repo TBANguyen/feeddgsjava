@@ -16,8 +16,7 @@ import static org.skyscreamer.jsonassert.JSONAssert.assertEquals;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = TestApplication.class)
 public class ResolverTests {
-
-
+    
     //Also known as integration tests
     @Autowired
     GraphQLTestTemplate graphQLTestTemplate;
