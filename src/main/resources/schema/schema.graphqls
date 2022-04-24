@@ -2,12 +2,10 @@ scalar Date
 scalar DateTime
 
 type Query {
-
     events: [Event!]
     venues: [Venue!]
     organizers: [Organizer!]
     eventgroups: [EventGroup!]
-
 }
 
 type Event {
@@ -23,18 +21,15 @@ type Event {
     limited: String
 }
 
-
 type Venue{
     id: Int
     organizer_id: Int
     json: String
 }
-
 type Organizer{
     id: Int
     json: String
 }
-
 type EventGroup{
     id: Int
     organizer_id: Int

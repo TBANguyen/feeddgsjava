@@ -10,9 +10,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+
+/**
+ * Defines the GraphQL endpoint for Venue queries.
+ */
+
 @Service
 public class VenueQueryService {
-
 
     @Autowired
     private VenueRepository repository;

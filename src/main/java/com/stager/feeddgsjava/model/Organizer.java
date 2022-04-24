@@ -17,7 +17,6 @@ public class Organizer {
     @Column(name = "json")
     private String json;
 
-
     public Integer getId() {
         return id;
     }

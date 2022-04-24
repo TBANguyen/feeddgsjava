@@ -11,6 +11,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
+/**
+ * Defines what the resolvers can call regarding Events.
+ */
+
 @Service
 public class EventQueryService {
 
@@ -21,15 +26,4 @@ public class EventQueryService {
         var Events = repository.findAll();
         return Events;
     }
-
-    public Optional<Event> eventonlybyid(Integer event_id) {return repository.findById(event_id);}
-
-
-
-//    public List<Event> eventbyid(Integer event_id) {
-//        return repository.findbyid(event_id);
-//    }
-
-
-//    public Event eventonlybyid(Integer event_id) {return repository.findAll().get(event_id);}
 }

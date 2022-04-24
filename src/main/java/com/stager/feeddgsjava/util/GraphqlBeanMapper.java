@@ -6,7 +6,7 @@ import com.stager.feeddgsjava.model.Organizer;
 import com.stager.feeddgsjava.model.Venue;
 
 /**
- *
+ *  Maps the JPA Bean types to GraphQL Bean types.
  */
 public class GraphqlBeanMapper {
 
@@ -24,26 +24,6 @@ public class GraphqlBeanMapper {
         result.setExtended(original.getExtended());
         result.setLimited(original.getLimited());
 
-
-
-
-
-
-
-
-
-//        result.setName(original.getName());
-//        result.setCreatedAt(original.getCreatedAt());
-//        result.setDoorsOpen(original.getDoorsOpen());
-//        result.setModifiedAt(original.getModifiedAt());
-//        result.setEnd(original.getEnd());
-//        result.setProgramStart(original.getProgramStart());
-//        result.setStart(original.getStart());
-//        result.setProjectTypeCode(original.getProjectTypeCode());
-//        result.setProjectTypeName(original.getProjectTypeName());
-//        result.setUniqueId(original.getUniqueId());
-//        result.setOrganizationId(original.getOrganizationId());
-//        result.setEventTypeId(original.getEventTypeId());
         return result;
     }
 
@@ -53,6 +33,7 @@ public class GraphqlBeanMapper {
         result.setId(original.getId());
         result.setOrganizer_id(original.getOrganizer_id());
         result.setJson(original.getJson());
+
         return result;
     }
 
@@ -61,6 +42,7 @@ public class GraphqlBeanMapper {
 
         result.setId(original.getId());
         result.setJson(original.getJson());
+
         return result;
     }
 

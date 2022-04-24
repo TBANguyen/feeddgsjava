@@ -8,9 +8,14 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+/**
+ * Defines the GraphQL endpoint for Organizer queries.
+ */
+
+
 @Service
 public class OrganizerQueryService {
-
 
     @Autowired
     private OrganizerRepository repository;

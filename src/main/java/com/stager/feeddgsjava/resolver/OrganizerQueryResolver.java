@@ -13,6 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+/**
+ * Translates GraphQL queries regarding Organizer to db queries and the db results to JSON.
+ */
+
 @DgsComponent
 public class OrganizerQueryResolver {
 

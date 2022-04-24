@@ -24,7 +24,6 @@ public class EventGroup {
     @Column(name = "extended")
     private String extended;
 
-
     @Column(name = "limited")
     private String limited;
 
